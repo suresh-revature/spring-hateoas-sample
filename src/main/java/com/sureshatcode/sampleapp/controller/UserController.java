@@ -25,7 +25,7 @@ public class UserController {
 		return "Application started running";
 	}
 
-	@GetMapping(value = "/getuser")
+	@GetMapping(value = "/users")
 	public HttpEntity<List<User>> getUserData() {
 		List<User> users = null;
 		try {
