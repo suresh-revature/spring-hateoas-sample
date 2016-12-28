@@ -1,2 +1,2 @@
 # spring-hateoas-sample
-Sample App for Spring Hateoas
+Sample App for Spring Hateoas with Hibernate<br>Once done the application setup, we have to run the <b>Application.java</b> file with <b>Run as Java application</b> option. It will trigger the tomcat server in port <b>8080</b>.<br><br><u>Rest API URL's:</u><br>Get All Users: <b>http://localhost:8080/users</b><br>Response:<pre>[{"fullName":"Suresh Palanisamy","emailAddress":"suresh@revature.com","age":20,"userId":1,"links":[]},{"fullName":"Suresh","emailAddress":"suresh@yopmail.com","age":21,"userId":2,"links":[]},{"fullName":"Siva","emailAddress":"siva@test.com","age":22,"userId":3,"links":[]}]</pre>
