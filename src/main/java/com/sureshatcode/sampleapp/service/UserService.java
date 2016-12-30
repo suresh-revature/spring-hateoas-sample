@@ -14,10 +14,20 @@ public class UserService {
 	@Autowired
 	private UserDao userDao;
 
-	public List<User> doGetUserData() {
+	public List<User> doGetUsers() {
 		List<User> user = null;
 		try {
-			user = userDao.getUserData();
+			user = userDao.getUsers();
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return user;
+	}
+
+	public User doGetUserByUserId(Long userId) {
+		User user = null;
+		try {
+			user = userDao.getUserByUserId(userId);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
