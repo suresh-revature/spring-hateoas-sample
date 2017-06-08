@@ -3,11 +3,10 @@ jdk: oraclejdk8
 sudo: enabled
 dist: trusty
 service: mysql
-before_install:
- - chmod +x gradle
 script: 
   - ./gradle check
   - ./gradle assemble
+  - ./gradle build
 before_cache:
   - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
   - rm -fr $HOME/.gradle/caches/*/plugin-resolution/
