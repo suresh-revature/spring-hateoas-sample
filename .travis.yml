@@ -4,10 +4,10 @@ sudo: enabled
 dist: trusty
 service: mysql
 before_install:
- - chmod +x gradlew
+ - chmod +x gradle
 script: 
-  - ./gradlew check
-  - ./gradlew assemble
+  - ./gradle check
+  - ./gradle assemble
 before_cache:
   - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
   - rm -fr $HOME/.gradle/caches/*/plugin-resolution/
