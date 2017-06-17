@@ -8,4 +8,4 @@ script:
   - gradle assemble
   - gradle build
 notifications:
-   slack: loptracker:EVAw1XP4Iul0F7Np7ffmTh7B
+  slack: sureshatcode:61gIfHI2bZVtZw3vwyaD50pg
